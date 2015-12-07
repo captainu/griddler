@@ -52,7 +52,9 @@ describe Griddler::EmailsController, :type => :controller do
       text: 'this is an email message',
       html: '<p>this is an email message</p>',
       charsets: '{"to":"UTF-8","html":"ISO-8859-1","subject":"UTF-8","from":"UTF-8","text":"ISO-8859-1"}',
-      SPF: "pass"
+      SPF: "pass",
+      spam_score: 4,
+      spam_report: "Spam"
     }
   end
 
